@@ -1,0 +1,9 @@
+sec-edgar-downloader
+edgar-parser
+python-dotenv
+yfinance
+langgraph
+langchain-groq
+langchain-community
+langchain-chroma
+chromadb

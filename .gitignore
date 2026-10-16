@@ -1,0 +1,43 @@
+# === Секреты (НИКОГДА не коммитить) ===
+.env
+.env.local
+.env.*.local
+*.key
+secrets.json
+
+# === Данные проекта (генерируются локально) ===
+data/
+exports/
+*.db
+*.sqlite
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+ENV/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# === Логи ===
+*.log
+logs/
+
+# === Jupyter ===
+.ipynb_checkpoints/
