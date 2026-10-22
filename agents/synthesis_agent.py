@@ -2,6 +2,7 @@
 from agents.state import CreditState
 from agents.llm import llm, extract_text
 
+"""разширить кретерии для head of the credit committee, чтобы увелить точность предсказания"""
 
 def synthesis_agent(state: CreditState) -> dict:
     prompt = f"""You are the head of the credit committee.
