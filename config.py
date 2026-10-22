@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # SEC User-Agent (required!)
-SEC_COMPANY_NAME = os.getenv("SEC_COMPANY_NAME", "Abuba Hadagaki")
-SEC_EMAIL = os.getenv("SEC_EMAIL", "abubahadagaki@gmail.com")
+SEC_COMPANY_NAME = os.getenv("SEC_COMPANY_NAME", "Max Musterman")
+SEC_EMAIL = os.getenv("SEC_EMAIL", "maxmusterman@gmail.com")
 
 # Folder for downloaded reports
 DATA_DIR = "data/filings"
