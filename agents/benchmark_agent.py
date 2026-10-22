@@ -8,7 +8,7 @@ from agents.llm import llm, extract_text
 
 def benchmark_agent(state: CreditState) -> dict:
     ticker = state["ticker"]
-
+""" Нужно поработать с peers_map, требует оптимизации"""
     peers_map = {
         "AAPL": ["MSFT", "GOOGL", "META", "AMZN"],
         "MSFT": ["AAPL", "GOOGL", "META", "AMZN"],
@@ -35,7 +35,8 @@ def benchmark_agent(state: CreditState) -> dict:
             "debt_to_equity": info.get("debtToEquity"),
             "profit_margin": info.get("profitMargins"),
         })
-
+"""заменить математические операции агента на математические операции в коде, и передавать агенту уже посчитаные значения"""
+    
     prompt = f"""You are a comparative valuation analyst.
     Target company: {ticker}
     Target metrics: {json.dumps(target_metrics, indent=2)}
